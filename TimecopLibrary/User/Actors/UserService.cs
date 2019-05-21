@@ -25,8 +25,8 @@ namespace CommonLibrary.User.Actors
                 test.Forward(c);
 
                 //this will send properly
-                var testActor = Context.ActorOf(Props.Create(() => new TestActor()));
-                testActor.Forward(c);
+                //var testActor = Context.ActorOf(Props.Create(() => new TestActor()));
+                //testActor.Forward(c);
 
 
                 Sender.Tell(new UserDetailResult("Carlo", "DiGiacomo"));

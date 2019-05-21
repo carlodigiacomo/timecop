@@ -10,8 +10,11 @@ namespace CommonLibrary.User.Actors
 {
     public class TestActor : ReceiveActor
     {
-        public TestActor()
+        private readonly IActorFactory _actorFactory;
+        public TestActor(IActorFactory actorFactory)
         {
+            _actorFactory = actorFactory;
+
             Receive<GetUserDetail>(c =>
             {
                 var junk = c.UserId;
