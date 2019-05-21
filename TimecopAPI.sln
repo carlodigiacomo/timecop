@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimecopAPI", "TimecopAPI\TimecopAPI.csproj", "{38B1068C-0080-4796-BC4A-EE336EE8DD28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLibrary", "TimecopLibrary\CommonLibrary.csproj", "{79473923-0C68-4E6D-BF3F-F84A03D8B882}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38B1068C-0080-4796-BC4A-EE336EE8DD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B1068C-0080-4796-BC4A-EE336EE8DD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B1068C-0080-4796-BC4A-EE336EE8DD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B1068C-0080-4796-BC4A-EE336EE8DD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79473923-0C68-4E6D-BF3F-F84A03D8B882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79473923-0C68-4E6D-BF3F-F84A03D8B882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79473923-0C68-4E6D-BF3F-F84A03D8B882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79473923-0C68-4E6D-BF3F-F84A03D8B882}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD4C706F-F110-4EA3-89E1-CC91011CB003}
+	EndGlobalSection
+EndGlobal

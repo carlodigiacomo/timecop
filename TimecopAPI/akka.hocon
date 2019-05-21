@@ -1,0 +1,27 @@
+﻿akka {
+  # Logging config
+  # NOTE: Configuration of the specific logging targets is in NLog.config
+  loggers = ["Akka.Logger.NLog.NLogLogger, Akka.Logger.NLog"] // Logging engine
+  stdout-loglevel = TRACE // Log level during startup and shutdown
+  log-config-on-start = on // Log the configuration stuff being used during startup
+  loglevel = TRACE // Normal log level
+
+  # Actor config - sets Wire as the default serializer
+  actor {
+          debug
+          {
+            receive = on      # log any received message
+            autoreceive = on  # log automatically received messages, e.g. PoisonPill
+            lifecycle = on    # log actor lifecycle changes
+            event-stream = on # log subscription changes for Akka.NET event stream
+            unhandled = on    # log unhandled messages sent to actors
+          }
+	
+    serializers {
+      hyperion = "Akka.Serialization.HyperionSerializer, Akka.Serialization.Hyperion"
+    }
+    serialization-bindings {
+      "System.Object" = hyperion
+    }
+  }
+}
